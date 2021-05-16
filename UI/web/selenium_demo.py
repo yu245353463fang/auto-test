@@ -32,6 +32,7 @@ class SeleniumOp(unittest.TestCase):
         create = self.driver.find_element_by_xpath('/html/body/section/div/div[3]/div[3]/div/section/div/button/span')
         create.click()
         self.driver.implicitly_wait(2)
+        sleep(2)
 
         title = self.driver.find_element_by_xpath('//*[@id="reply-title"]')
         title.send_keys('ZKS to the moon!乌拉！')
